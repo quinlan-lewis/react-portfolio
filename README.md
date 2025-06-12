@@ -157,24 +157,6 @@ Before you begin, ensure you have the following installed:
    npm run deploy
    ```
 
-### Option 4: AWS S3 + CloudFront
-
-1. **Build the project**
-   ```bash
-   npm run build
-   ```
-
-2. **Create S3 bucket**
-   - Configure for static website hosting
-   - Upload contents of `build` folder
-
-3. **Set up CloudFront** (optional but recommended)
-   - Create CloudFront distribution
-   - Point to S3 bucket
-   - Configure custom domain and SSL
-
-### Option 5: Firebase Hosting
-
 1. **Install Firebase CLI**
    ```bash
    npm install -g firebase-tools
@@ -210,8 +192,6 @@ portfolio-website/
 └── README.md              # This file
 ```
 
-## 🎨 Customization
-
 ### Updating Content
 
 1. **Personal Information**
@@ -235,13 +215,6 @@ portfolio-website/
    - Update `tailwind.config.js` for color scheme changes
    - Customize gradient colors in `src/App.js`
 
-### Adding New Sections
-
-1. **Create new section component** in `src/App.js`
-2. **Add navigation link** in the header
-3. **Style with Tailwind CSS** classes
-4. **Test responsiveness** across devices
-
 ## 🔧 Environment Variables
 
 Create a `.env` file in the frontend directory for any environment-specific settings:
@@ -251,61 +224,6 @@ Create a `.env` file in the frontend directory for any environment-specific sett
 REACT_APP_SITE_URL=https://yoursite.com
 REACT_APP_ANALYTICS_ID=your-analytics-id
 ```
-
-## 🚨 Troubleshooting
-
-### Common Issues
-
-1. **Node modules error**
-   ```bash
-   rm -rf node_modules package-lock.json
-   npm install
-   ```
-
-2. **Port already in use**
-   ```bash
-   # Kill process on port 3000
-   lsof -ti:3000 | xargs kill -9
-   npm start
-   ```
-
-3. **Build fails**
-   - Check for console errors
-   - Verify all dependencies are installed
-   - Ensure Node.js version is compatible
-
-4. **Images not loading**
-   - Check image URLs are accessible
-   - Verify image paths are correct
-   - Consider using relative paths for local images
-
-### Performance Optimization
-
-1. **Image Optimization**
-   - Use WebP format when possible
-   - Implement lazy loading for images
-   - Optimize image sizes for different screen densities
-
-2. **Bundle Optimization**
-   - Analyze bundle size: `npm run build -- --analyze`
-   - Implement code splitting if needed
-   - Remove unused dependencies
-
-## 📱 Browser Support
-
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-- Mobile browsers (iOS Safari, Chrome Mobile)
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
 
 ## 📄 License
 

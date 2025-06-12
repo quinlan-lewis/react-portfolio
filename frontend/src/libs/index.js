@@ -1,0 +1,9 @@
+export { default as About } from './components/about/about';
+export { default as Contact } from './components/contact/contact';
+export { default as Projects } from './components/projects/projects';
+export { default as Experience } from './components/experience/experience';
+export { default as Education } from './components/education/education';
+export { default as Skills } from './components/skills/skills';
+export { default as Footer } from './components/footer/footer';
+export { default as Navigation } from './components/navigation/navigation';
+export { default as Hero } from './components/hero/hero';
