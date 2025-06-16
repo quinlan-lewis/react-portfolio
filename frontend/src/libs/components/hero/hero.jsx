@@ -38,7 +38,7 @@ const Hero = () => {
                             <a href="#experience">View My Work</a>
                         </button>
                         <a
-                            href="/Resume_QL.pdf"
+                            href="/Quinlan_Lewis_Resume.pdf"
                             download="Quinlan_Lewis_Resume.pdf"
                             className="block"
                         >
